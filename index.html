@@ -1,28 +1,33 @@
 <DOCTYPE html>
   <html>
   <head>
-    <title>My Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="project.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="project.js"></script>
+ <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="project.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="project.js"></script>
+</head>
   </head>
   <body>
-  <div id="container">
+  <header id="container">
     <div class="header">
       <h1>Tiyahn Davis</h1>
       <p>I go to Parkville,I am going into my sophmore year</p>
     </div>
 
-    <div class="topnav">
-      <a href="index.html" class="active">Home</a>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
       <a href="about.html">About me</a>
       <a href="gallery.html">Photo Gallery</a>
-      <a href="contact.html" style="float:right">Contact</a>
+      <a href="contact.html" class="active contact" style="float:right">Contact</a>
+      <a href="javascript:void(0);" class="icon">
+      <i class="fa fa-bars"></i>
     </div>
 
-    <div class="row">
+    <div class="row content">
       <div class="leftcolumn">
         <div class="card">
           <h2>My Trip To Florida</h2>
@@ -42,7 +47,7 @@
       <div class="rightcolumn">
         <div class="card">
           <h2>About Me</h2>
-          <div class="fakeimg" style="height:100px;">Image</div>
+          <div class="profile-photo" style="height:100px;">Image</div>
           <p style="font-size:30px">I am 15, My birthday is on July 2nd. I have 2 older brothers. My I am the youngest. I have no sisters. I have alot of cousins. </p>
         </div>
         <div class="card">

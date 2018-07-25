@@ -61,6 +61,13 @@ body {
     background-color: #ddd;
     color: black;
 }
+.topnav a.conact {
+	float: right;
+}
+.topnav .icon {
+	display: none;
+}
+
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -83,7 +90,12 @@ body {
     width: 100%;
     padding: 20px;
 }
-
+/* Profile picture */
+.profile-photo {
+	background-image: url("images/Tiyahn.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 /* Add a card effect for articles */
 .card {
     background-color: white;
@@ -108,6 +120,9 @@ body {
     display: table;
     clear: both;
 }
+.content{
+	min-height: calc(100vh - 40vh);
+}
 
 /* Footer */
 .footer {
@@ -129,12 +144,27 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     #container {
         width: 100%;
     }
-    .topnav a {
+    .topnav a.contact {
+        float: left;
+    }
+    .topnav a:not(.active) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
         float: none;
-        width: 100%;
+        display: block;
+        text-align: left;
     }
 }
